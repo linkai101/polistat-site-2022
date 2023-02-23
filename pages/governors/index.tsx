@@ -29,13 +29,13 @@ export default function SenatePage({ latestDate, candidates, averagedPolls, incu
         </div>
           
         <div className="flex gap-2 items-center justify-center">
-          <motion.div
+          {/* <motion.div
             className="h-2 w-2 rounded-full bg-green-400"
             animate={{ opacity: [0,1,0] }}
             transition={{ duration: 2, repeat: Infinity, }}
-          />
+          /> */}
           <p className="text-sm text-center text-neutral-400 uppercase font-bold">
-              Updated {!isNaN(new Date(latestDate).valueOf()) ? new Date(`${latestDate}`).toLocaleDateString('en-US', { month:'numeric',day:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit'}) : latestDate}
+              Last updated {!isNaN(new Date(latestDate).valueOf()) ? new Date(`${latestDate}`).toLocaleDateString('en-US', { month:'numeric',day:'numeric',year:'numeric',hour:'2-digit',minute:'2-digit'}) : latestDate}
           </p>
         </div>
 
